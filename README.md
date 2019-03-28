@@ -45,5 +45,6 @@ https://blog.csdn.net/time_future/article/details/85805298
 `python3 ~/carTest/showIP.py &`
 
 
-## 8:opencv色域识别：
+## 8:opencv的 HSV 色域识别：
 
+https://blog.csdn.net/beizhengren/article/details/78354896
