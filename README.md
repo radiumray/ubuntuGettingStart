@@ -51,5 +51,7 @@ https://blog.csdn.net/time_future/article/details/85805298
 
 `python3 ~/carTest/showIP.py &`
 
+## 8:机器人各种算法：
 
+https://atsushisakai.github.io/PythonRobotics/
 
