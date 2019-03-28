@@ -16,9 +16,16 @@ https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/
 
 `pip install opencv-python`
 
+opencv的 HSV 色域识别：
+
+https://blog.csdn.net/beizhengren/article/details/78354896
+
 ## 4:安装串口：
 
 `pip install pyserial`
+
+https://blog.csdn.net/as472780551/article/details/79126927
+
 
 ## 5:安装openssh:
 
@@ -45,6 +52,4 @@ https://blog.csdn.net/time_future/article/details/85805298
 `python3 ~/carTest/showIP.py &`
 
 
-## 8:opencv的 HSV 色域识别：
 
-https://blog.csdn.net/beizhengren/article/details/78354896
