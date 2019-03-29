@@ -20,6 +20,10 @@ opencv的 HSV 色域识别：
 
 https://blog.csdn.net/beizhengren/article/details/78354896
 
+usb 摄像头使用：
+
+https://www.cnblogs.com/arkenstone/p/6872665.html
+
 ## 4:安装串口：
 
 `pip install pyserial`
