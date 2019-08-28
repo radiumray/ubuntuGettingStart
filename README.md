@@ -60,7 +60,8 @@ https://blog.csdn.net/time_future/article/details/85805298
 https://atsushisakai.github.io/PythonRobotics/
 
 
-
+yolo数据集
+https://www.kaggle.com/aruchomu/data-for-yolo-v3-kernel
 
 c++ opencv win:
 https://blog.csdn.net/zhaiax672/article/details/88971248
