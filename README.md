@@ -65,3 +65,5 @@ https://www.kaggle.com/aruchomu/data-for-yolo-v3-kernel
 
 c++ opencv win:
 https://blog.csdn.net/zhaiax672/article/details/88971248
+
+https://colab.research.google.com/drive/1mirG8BSoB3k87mh-qyY3-8-ZXj0XB6h6#scrollTo=Xh5cMw23YdaE
