@@ -67,3 +67,19 @@ c++ opencv win:
 https://blog.csdn.net/zhaiax672/article/details/88971248
 
 https://colab.research.google.com/drive/1mirG8BSoB3k87mh-qyY3-8-ZXj0XB6h6#scrollTo=Xh5cMw23YdaE
+
+------------------------------------------------------------------------------------------------
+import numpy as np
+import cv2
+
+img = np.zeros([50,50,3],dtype=np.uint8)
+
+sss=np.ones([50, 50, 1], dtype=np.uint8)
+sss=sss*200
+
+img[:, :, 0] = sss[:, :, 0]
+img[:, :, 1] = sss[:, :, 0]
+img[:, :, 2] = sss[:, :, 0]
+
+cv2.imshow('sss', img)
+cv2.waitKey(0)
