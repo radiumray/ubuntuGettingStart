@@ -83,3 +83,5 @@ img[:, :, 2] = sss[:, :, 0]
 
 cv2.imshow('sss', img)
 cv2.waitKey(0)
+
+https://zhuanlan.zhihu.com/p/29567314
