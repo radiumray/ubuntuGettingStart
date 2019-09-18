@@ -85,3 +85,15 @@ cv2.imshow('sss', img)
 cv2.waitKey(0)
 
 https://zhuanlan.zhihu.com/p/29567314
+
+--------------------------------------------------------------------------------------------
+NVIDIA-SMI has failed because it couldn’t communicate with the NVIDIA driver. Ma
+ke sure that the latest NVIDIA driver is installed and running
+
+遇到这个问题解决办法：
+方法一：
+cd /usr/src 查看驱动版本号(我的是410.93)
+sudo apt-get install dkms
+sudo dkms install -m nvidia -v 410.93
+无需重启即可成功看到输入nvidia-smi后熟悉的界面
+
