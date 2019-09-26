@@ -97,3 +97,11 @@ sudo apt-get install dkms
 sudo dkms install -m nvidia -v 410.93
 无需重启即可成功看到输入nvidia-smi后熟悉的界面
 
+-------------------------------------------------------------------------------------------
+好网站：
+
+oldpan.me
+
+whoiscaesarbao.com
+
+
