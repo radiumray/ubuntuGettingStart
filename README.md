@@ -88,6 +88,12 @@ https://zhuanlan.zhihu.com/p/29567314
 
 --------------------------------------------------------------------------------------------
 
+
+关掉securtiy boot mode
+先设置密码，然后disable
+
+
+
 去英伟达官网下驱动：
 https://www.geforce.cn/drivers
 
