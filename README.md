@@ -87,12 +87,10 @@ cv2.waitKey(0)
 https://zhuanlan.zhihu.com/p/29567314
 
 --------------------------------------------------------------------------------------------
-
+给电脑装显卡驱动：
 
 关掉securtiy boot mode
 先设置密码，然后disable
-
-
 
 去英伟达官网下驱动：
 https://www.geforce.cn/drivers
@@ -106,18 +104,19 @@ GeForce MX150
 
 sudo bash NVIDIA-Linux-x86_64-430.50.run
 
+```bash
 nvida-smi
 
-  sudo apt-get purge nvidia*
-  sudo apt-get --purge remove xserver-xorg-video-nouveau
-  sudo apt-cache search nvidia | grep -E "nvidia-[0-9]{3}"
-  sudo apt-get update
-  sudo apt-get install gcc make
-  chmod +x NVIDIA-Linux-x86_64-418.56.run
-  sudo ./NVIDIA-Linux-x86_64-418.56.run
-  sudo  shutdown -r now
-  nvidia-smi
-
+sudo apt-get purge nvidia*
+sudo apt-get --purge remove xserver-xorg-video-nouveau
+sudo apt-cache search nvidia | grep -E "nvidia-[0-9]{3}"
+sudo apt-get update
+sudo apt-get install gcc make
+chmod +x NVIDIA-Linux-x86_64-418.56.run
+sudo ./NVIDIA-Linux-x86_64-418.56.run
+sudo  shutdown -r now
+nvidia-smi
+```
 
 
 NVIDIA-SMI has failed because it couldn’t communicate with the NVIDIA driver. Ma
