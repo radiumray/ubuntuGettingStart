@@ -87,15 +87,45 @@ cv2.waitKey(0)
 https://zhuanlan.zhihu.com/p/29567314
 
 --------------------------------------------------------------------------------------------
+
+去英伟达官网下驱动：
+https://www.geforce.cn/drivers
+
+ubunut查gpu显卡型号：
+
+lspci | grep -i nvidia
+
+GeForce MX150
+64bit
+
+sudo bash NVIDIA-Linux-x86_64-430.50.run
+
+nvida-smi
+
+  sudo apt-get purge nvidia*
+  sudo apt-get --purge remove xserver-xorg-video-nouveau
+  sudo apt-cache search nvidia | grep -E "nvidia-[0-9]{3}"
+  sudo apt-get update
+  sudo apt-get install gcc make
+  chmod +x NVIDIA-Linux-x86_64-418.56.run
+  sudo ./NVIDIA-Linux-x86_64-418.56.run
+  sudo  shutdown -r now
+  nvidia-smi
+
+
+
 NVIDIA-SMI has failed because it couldn’t communicate with the NVIDIA driver. Ma
 ke sure that the latest NVIDIA driver is installed and running
 
 遇到这个问题解决办法：
 方法一：
 cd /usr/src 查看驱动版本号(我的是410.93)
-sudo apt-get install dkms
-sudo dkms install -m nvidia -v 410.93
-无需重启即可成功看到输入nvidia-smi后熟悉的界面
+
+ls 查看你的驱动版本型号
+
+  sudo apt-get install dkms
+  sudo dkms install -m nvidia -v 410.93
+  无需重启即可成功看到输入nvidia-smi后熟悉的界面
 
 -------------------------------------------------------------------------------------------
 好网站：
