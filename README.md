@@ -139,4 +139,76 @@ oldpan.me
 
 whoiscaesarbao.com
 
+------------------------------------------------------------------------------------------
 
+import pandas as pd
+
+
+def initData():
+    df=pd.DataFrame({'imageName':['111.jpg', '222.jpg', '333.jpg', '444.jpg'], 
+                    'x':[11.2,22.2,33.2,44.2],
+                    'y':[22.2,33.2,44.2,55.2]
+                    }, dtype='float')
+
+    dfTest=pd.DataFrame({'Names': ['Pete', 'Jordan', 'Gustaf',
+                            'Sophie', 'Sally', 'Simone'],
+                    'Age':[22, 21, 19, 19, 29, 21]})
+
+    dfs = {'imageLable':df, 'test':dfTest}
+
+    # df.to_excel('pandasExel.xlsx', sheet_name='imageLable', index=False)
+    writer = pd.ExcelWriter('pandasExel.xlsx', engine='xlsxwriter')
+
+    for sheet_name in dfs.keys():
+        dfs[sheet_name].to_excel(writer, sheet_name=sheet_name, index=False)
+
+    writer.save()
+
+# initData()
+
+
+def searchIndexByColName(excelName, sheetName, colName, keyWord):
+    df = pd.read_excel(excelName, sheet_name=sheetName)
+    value=df.loc[df[colName] == keyWord]
+    if(value.empty):
+        return -1
+    else:
+        # print('x:',value['x'].values[0])
+        return value.index.values[0]
+
+# index=searchIndexByColName('pandasExel.xlsx', 'imageLable', 'imageName', '444.jpg')
+# print('index:', index)
+
+def updateXYByColName(excelName, sheetName, colName, keyWord, x, y):
+    df = pd.read_excel(excelName, sheet_name=sheetName)
+    value=df.loc[df[colName] == keyWord]
+    if(value.empty):
+        print('add row at end')
+        new=pd.DataFrame({'imageName':keyWord, 
+                'x':x,
+                'y':y
+                }, index=[4])
+
+
+        df=df.append(new,ignore_index=True)
+        df.to_excel(excelName, sheet_name=sheetName)
+
+    else:
+        print('update x y')
+        index=value.index.values[0]
+        df.at[index,'x']=x
+        df.at[index,'y']=y
+        print(df)
+        df.to_excel(excelName, sheet_name=sheetName)
+        # writer = pd.ExcelWriter(excelName, engine='xlsxwriter')
+        # writer.save
+        # new_column = pd.Series(['d', 'e'], name='B', index=[0, 2])
+        # df.update(new_column)
+        # print('x:',value['x'].values[0])
+        # return value.index.values[0]
+
+
+updateXYByColName('pandasExel.xlsx', 'imageLable', 'imageName', '555.jpg', 1.1, 2.2)
+
+
+# df.drop([0]) #delet first row
