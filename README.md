@@ -141,6 +141,8 @@ whoiscaesarbao.com
 
 ------------------------------------------------------------------------------------------
 
+
+```py
 import pandas as pd
 
 
@@ -212,3 +214,4 @@ updateXYByColName('pandasExel.xlsx', 'imageLable', 'imageName', '555.jpg', 1.1, 
 
 
 # df.drop([0]) #delet first row
+```
