@@ -81,6 +81,8 @@ img[:, :, 0] = sss[:, :, 0]
 img[:, :, 1] = sss[:, :, 0]
 img[:, :, 2] = sss[:, :, 0]
 
+img=cv2.normalize(img, None, 0, 255, cv2.NORM_MINMAX, cv2.CV_8U)
+
 cv2.imshow('sss', img)
 cv2.waitKey(0)
 
