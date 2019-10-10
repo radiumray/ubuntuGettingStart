@@ -145,6 +145,8 @@ whoiscaesarbao.com
 
 heatmap定位：
 http://b.edu.51cto.com/samsung/course/video?lessonId=237444
+dsntnn:
+https://zhuanlan.zhihu.com/p/53057942
 
 网络结构：
 https://baijiahao.baidu.com/s?id=1590362274035183205&wfr=spider&for=pc
