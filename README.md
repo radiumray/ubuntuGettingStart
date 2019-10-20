@@ -156,3 +156,153 @@ https://baijiahao.baidu.com/s?id=1590362274035183205&wfr=spider&for=pc
 * 池化层容易丢失低层次的特征
 * 调整卷积核的步幅来调整下采样的程度
 * 上采样能帮助网络学习细粒度的特征
+----------------------------------------------------------------------------------
+```py
+import time
+import sys
+import cv2
+import numpy as np
+import datetime
+from PyQt5.QtCore import QObject, pyqtSignal, QThread, QTimer, Qt
+from PyQt5.QtWidgets import (QProgressBar, QApplication, 
+                            QPushButton, QDialog, 
+                            QGridLayout, QMainWindow, 
+                            QVBoxLayout, QWidget, 
+                            QLabel)
+from PyQt5.QtGui import QImage, QPixmap
+
+
+srcHeight=480
+srcWidth=480
+
+
+
+class recoProcess(QObject):
+    _signal = pyqtSignal(int)
+    finished = pyqtSignal()
+
+    def __init__(self):
+        super(recoProcess, self).__init__()
+
+    def run(self):
+        for i in range(101):
+            print(i)
+            self._signal.emit(i)
+            time.sleep(0.01)
+        self.finished.emit()
+
+
+class Video():
+    def __init__(self, capture):
+        self.capture = capture
+        capture.set(3,srcWidth) # set Width
+        capture.set(4,srcHeight) # set Height
+        self.currentFrame = np.array([])
+ 
+    def captureFrame(self):
+        ret, readFrame = self.capture.read()
+        return readFrame
+ 
+    def captureNextFrame(self):
+        ret, readFrame = self.capture.read()
+        if (ret == True):
+ 
+            # readFrame=cv2.resize(readFrame, (int(srcWidth / 4), int(srcHeight / 4)))
+             
+            #cv2.waitKey(1)
+            self.currentFrame = cv2.cvtColor(readFrame, cv2.COLOR_BGR2RGB)
+ 
+    def convertFrame(self):
+        try:
+            height, width = self.currentFrame.shape[:2]
+            # print(height, width)
+            img = QImage(self.currentFrame, width, height, QImage.Format_RGB888)
+            img = QPixmap.fromImage(img)
+            #self.previousFrame = self.currentFrame
+            return img
+        except:
+            print('convertFrame error')
+            return None
+
+
+
+
+
+class CameraWin(QMainWindow):
+    def __init__(self):
+        super(CameraWin, self).__init__()
+
+        self.init_ui()
+ 
+    def init_ui(self):
+        self.setWindowTitle('fingerReco')
+
+        self.layout = QVBoxLayout()
+
+
+        self.video = Video(cv2.VideoCapture(0))
+
+        self.videoFrame = QLabel('VideoCapture')
+        # self.videoFrame.setAlignment(Qt.AlignCenter)
+
+        self.progress = QProgressBar(self)
+        self.recoButton = QPushButton('识别', self)
+
+        self.layout.addWidget(self.videoFrame)
+        self.layout.addWidget(self.progress)
+        self.layout.addWidget(self.recoButton)
+
+        self.main_frame = QWidget()
+        
+        self.main_frame.setLayout(self.layout)
+
+        self.recoButton.clicked.connect(self.recoButton_clicked)
+
+
+        self._timer = QTimer(self)
+        self._timer.timeout.connect(self.play)
+        self._timer.start(2)
+        self.update()
+
+        
+        self.setCentralWidget(self.main_frame)
+
+        self.ret, self.capturedFrame = self.video.capture.read()
+
+    def play(self):
+        try:
+            # nowTime=datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            # print(nowTime)
+            self.video.captureNextFrame()
+            self.videoFrame.setPixmap(self.video.convertFrame())
+            self.videoFrame.setScaledContents(True)
+        except TypeError:
+            print('No Frame')
+
+    def recoButton_clicked(self):
+        self.recoProcess_worker = recoProcess()
+        self.recoProcessing_thread = QThread()
+        self.recoProcess_worker.moveToThread(self.recoProcessing_thread)
+        self.recoProcess_worker._signal.connect(self.progress.setValue)
+        self.recoProcess_worker.finished.connect(self.recoProcess_worker_finished)
+        self.recoProcessing_thread.started.connect(self.recoProcess_worker.run)
+        self.recoProcessing_thread.start()
+
+        self.recoButton.setEnabled(False)
+
+
+    def recoProcess_worker_finished(self):
+        self.recoProcessing_thread.quit()
+        self.recoProcessing_thread.wait()
+        self.recoButton.setEnabled(True)
+
+
+
+
+if __name__ == '__main__':
+
+    app = QApplication(sys.argv)
+    win = CameraWin()
+    win.show()
+    app.exec_()
+```
