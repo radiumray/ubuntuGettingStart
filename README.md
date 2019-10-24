@@ -156,6 +156,12 @@ https://baijiahao.baidu.com/s?id=1590362274035183205&wfr=spider&for=pc
 * 池化层容易丢失低层次的特征
 * 调整卷积核的步幅来调整下采样的程度
 * 上采样能帮助网络学习细粒度的特征
+* https://github.com/jwchoi384/Gaussian_YOLOv3
+* https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch
+* https://github.com/shaoshengsong/MobileNetV3-SSD
+* 
+
+
 ----------------------------------------------------------------------------------
 ```py
 import time
