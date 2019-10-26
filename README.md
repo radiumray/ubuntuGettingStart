@@ -1,5 +1,4 @@
-# ubuntuGettingStart
-ubuntu上手说明
+# 临时笔记
 
 
 ## 1:进bios设置u盘启动安装ubuntu
