@@ -313,3 +313,7 @@ if __name__ == '__main__':
     win.show()
     app.exec_()
 ```
+---------------------------------------------------------------------------
+## centernet c++
+
+* https://blog.csdn.net/u011681952/article/details/92765549
