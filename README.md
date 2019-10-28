@@ -343,4 +343,4 @@ if __name__ == '__main__':
 * https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/
 * 扩展更多的swap分区避免Jetson Nano 4G的内存爆掉
 * 如何把系统装在外置SSD中而不用忍受SD卡的速度
-* 
+* running full yolov3 on the nano using either TensorRT or Deepstream 4.0.1?
