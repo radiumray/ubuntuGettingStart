@@ -340,4 +340,7 @@ if __name__ == '__main__':
 ----------------------------------------------------------------------------
 ## jetson nano pytorch
 
-https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/
+* https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/
+* 扩展更多的swap分区避免Jetson Nano 4G的内存爆掉
+* 如何把系统装在外置SSD中而不用忍受SD卡的速度
+* 
