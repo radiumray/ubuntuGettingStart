@@ -333,7 +333,7 @@ if __name__ == '__main__':
 
 6、create partition primary #创建磁盘分区
 
-7、acitve #激活磁盘分区
+7、active #激活磁盘分区
 
 8、format fs=fat32 quick #已fat32格式快速格式化磁盘分区
 ```
