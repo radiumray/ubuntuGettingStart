@@ -344,3 +344,11 @@ if __name__ == '__main__':
 * 扩展更多的swap分区避免Jetson Nano 4G的内存爆掉
 * 如何把系统装在外置SSD中而不用忍受SD卡的速度
 * running full yolov3 on the nano using either TensorRT or Deepstream 4.0.1?
+
+```
+Have you tried our deepstream SDK?
+It contains the samples for YOLOv2, YOLOv2_tiny, YOLOv3 and YOLOv3_tiny model.
+
+https://developer.nvidia.com/deepstream-sdk
+/opt/nvidia/deepstream/deepstream-4.0/sources/objectDetector_Yolo
+```
