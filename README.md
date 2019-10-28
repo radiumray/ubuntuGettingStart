@@ -316,3 +316,24 @@ if __name__ == '__main__':
 ## centernet c++
 
 * https://blog.csdn.net/u011681952/article/details/92765549
+
+-----------------------------------------------------------------------------
+## sd卡烧录后恢复容量
+
+```bash
+1、管理员方式启动cmd
+
+2、输入  diskpart
+
+3、list  disk   #查看当前有哪些磁盘
+
+4、select disk 1 #选择第一个磁盘 （这里我的sd卡是 disk 1）
+
+5、clean
+
+6、create partition primary #创建磁盘分区
+
+7、acitve #激活磁盘分区
+
+8、format fs=fat32 quick #已fat32格式快速格式化磁盘分区
+```
