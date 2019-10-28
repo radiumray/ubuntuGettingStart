@@ -337,3 +337,7 @@ if __name__ == '__main__':
 
 8、format fs=fat32 quick #已fat32格式快速格式化磁盘分区
 ```
+----------------------------------------------------------------------------
+## jetson nano pytorch
+
+https://devtalk.nvidia.com/default/topic/1049071/jetson-nano/pytorch-for-jetson-nano/
