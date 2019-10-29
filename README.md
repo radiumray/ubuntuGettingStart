@@ -352,3 +352,7 @@ It contains the samples for YOLOv2, YOLOv2_tiny, YOLOv3 and YOLOv3_tiny model.
 https://developer.nvidia.com/deepstream-sdk
 /opt/nvidia/deepstream/deepstream-4.0/sources/objectDetector_Yolo
 ```
+
+-----------------------------------------------------------------------------------------
+## PID, line regression:
+* https://openmv.io/blogs/news/linear-regression-line-following
