@@ -356,6 +356,7 @@ https://developer.nvidia.com/deepstream-sdk
 -----------------------------------------------------------------------------------------
 ## PID, line regression:
 * https://openmv.io/blogs/news/linear-regression-line-following
+https://github.com/ivmech/ivPID
 
 -------------------------------------------------------------------
 https://snapcraft.io/install/github-desktop/ubuntu#install
