@@ -359,4 +359,5 @@ https://developer.nvidia.com/deepstream-sdk
 https://github.com/ivmech/ivPID
 
 -------------------------------------------------------------------
-https://snapcraft.io/install/github-desktop/ubuntu#install
+## 麦克纳姆轮 控制
+https://zhuanlan.zhihu.com/p/20282234
