@@ -328,6 +328,7 @@ https://developer.nvidia.com/deepstream-sdk
 ## PID, line regression:
 * https://openmv.io/blogs/news/linear-regression-line-following
 https://github.com/ivmech/ivPID
+https://book.openmv.cc/project/follow-lines.html
 
 -------------------------------------------------------------------
 ## 麦克纳姆轮 控制
