@@ -338,3 +338,4 @@ https://zhuanlan.zhihu.com/p/20282234
 
 
 error: command '/usr/bin/nvcc' failed with exit status 1
+https://github.com/facebookresearch/maskrcnn-benchmark/issues/25
