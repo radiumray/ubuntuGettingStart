@@ -335,3 +335,6 @@ https://book.openmv.cc/project/follow-lines.html
 -------------------------------------------------------------------
 ## 麦克纳姆轮 控制
 https://zhuanlan.zhihu.com/p/20282234
+
+
+error: command '/usr/bin/nvcc' failed with exit status 1
