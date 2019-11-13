@@ -336,6 +336,32 @@ https://book.openmv.cc/project/follow-lines.html
 ## 麦克纳姆轮 控制
 https://zhuanlan.zhihu.com/p/20282234
 
+```py
+
+import math
+
+forwBackVelRange=[-240*math.pi/180,240*math.pi/180]
+leftRightVelRange=[-240*math.pi/180,240*math.pi/180]
+rotVelRange=[-240*math.pi/180,240*math.pi/180]
+
+# (0~1000)
+sliderForBack=600
+sliderLeftRight=600
+sliderRot=500
+
+forwBackVel=forwBackVelRange[0]+sliderForBack*0.001*(forwBackVelRange[1]-forwBackVelRange[0])
+leftRightVel=leftRightVelRange[0]+sliderLeftRight*0.001*(leftRightVelRange[1]-leftRightVelRange[0])
+rotVel=rotVelRange[0]+sliderRot*0.001*(rotVelRange[1]-rotVelRange[0])
+
+wheelJoints1V=-forwBackVel-leftRightVel-rotVel
+wheelJoints2V=-forwBackVel+leftRightVel-rotVel
+wheelJoints3V=-forwBackVel-leftRightVel+rotVel
+wheelJoints4V=-forwBackVel+leftRightVel+rotVel
+
+print(wheelJoints1V, wheelJoints2V, wheelJoints3V, wheelJoints4V)
+
+```
+
 
 error: command '/usr/bin/nvcc' failed with exit status 1
 https://github.com/facebookresearch/maskrcnn-benchmark/issues/25
