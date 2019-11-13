@@ -340,6 +340,13 @@ https://zhuanlan.zhihu.com/p/20282234
 
 import math
 
+
+wheelJoints=[]
+wheelJoints[1]='rollingJoint_fl'
+wheelJoints[2]='rollingJoint_rl'
+wheelJoints[3]='rollingJoint_rr'
+wheelJoints[4]='rollingJoint_fr'
+
 forwBackVelRange=[-240*math.pi/180,240*math.pi/180]
 leftRightVelRange=[-240*math.pi/180,240*math.pi/180]
 rotVelRange=[-240*math.pi/180,240*math.pi/180]
