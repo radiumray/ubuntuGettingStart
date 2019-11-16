@@ -385,4 +385,4 @@ https://blog.csdn.net/DanielDingshengli/article/details/100640981
 
 ## jetson nano 外接硬盘
 https://zhuanlan.zhihu.com/p/65391640
-
+https://www.liangzl.com/get-article-detail-134999.html
