@@ -84,6 +84,31 @@ sudo apt-get --purge remove xserver-xorg-video-nouveau
 sudo apt-cache search nvidia | grep -E "nvidia-[0-9]{3}"
 sudo apt-get update
 sudo apt-get install gcc make
+
+
+# 查看是否有nouveau驱动
+lsmod | grep nouveau
+# 如果有输出表示没有仅用，需要禁用
+
+# 如何有效的禁用 Ubuntu18.04的nouveau驱动
+
+sudo nano /etc/modprobe.d/blacklist.conf
+# 在最后两行添加：
+blacklist nouveau
+
+options nouveau modeset=0
+# 禁用nouveau的第三方驱动，之后也不需要改回来
+
+# 执行刷新内核
+sudo update-initramfs -u
+
+sudo reboot
+
+#重启后确认：lsmod | grep nouveau 如果没有输出表示成功
+
+
+
+
 chmod +x NVIDIA-Linux-x86_64-418.56.run
 sudo ./NVIDIA-Linux-x86_64-418.56.run
 sudo  shutdown -r now
