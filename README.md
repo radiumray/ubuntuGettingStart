@@ -113,6 +113,16 @@ chmod +x NVIDIA-Linux-x86_64-418.56.run
 sudo ./NVIDIA-Linux-x86_64-418.56.run
 sudo  shutdown -r now
 nvidia-smi
+
+
+--------------------------
+更新驱动
+cat /proc/driver/nvidia/version
+nvidia-smi
+ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+
+
 ```
 
 
