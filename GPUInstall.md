@@ -37,3 +37,9 @@ nvidia-smi
 
 
 # 安装pytorch顺便安装cudatoolkit
+
+```bash
+
+conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch
+
+```
