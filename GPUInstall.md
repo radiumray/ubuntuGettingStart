@@ -59,6 +59,49 @@ conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch
 
 ```bash
 
-待更新...
+Package              Version
+-------------------- -------------------
+absl-py              0.13.0
+astor                0.8.1
+bleach               1.5.0
+cached-property      1.5.2
+certifi              2021.5.30
+dataclasses          0.8
+docopt               0.6.2
+gast                 0.4.0
+google-pasta         0.2.0
+grpcio               1.38.0
+h5py                 3.1.0
+html5lib             0.9999999
+importlib-metadata   4.5.0
+Keras-Applications   1.0.8
+Keras-Preprocessing  1.1.2
+Markdown             3.3.4
+numpy                1.19.5
+olefile              0.46
+opencv-python        4.5.2.54
+pandas               1.1.5
+Pillow               8.2.0
+pip                  21.1.2
+protobuf             3.17.3
+PyQt5                5.12
+PyQt5-Qt5            5.15.2
+PyQt5-sip            4.19.19
+python-dateutil      2.8.1
+pytz                 2021.1
+setuptools           52.0.0.post20210125
+six                  1.16.0
+tensorboard          1.14.0
+tensorflow-estimator 1.14.0
+tensorflow-gpu       1.14.0
+termcolor            1.1.0
+torch                1.4.0
+torchaudio           0.4.0a0+719bcc7
+torchvision          0.5.0
+typing-extensions    3.10.0.0
+Werkzeug             2.0.1
+wheel                0.36.2
+wrapt                1.12.1
+zipp                 3.4.1
 
 ```
