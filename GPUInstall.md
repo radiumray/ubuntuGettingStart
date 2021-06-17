@@ -1,4 +1,13 @@
 # 安装anaconda建python虚拟环境
+
+```bash
+
+sh ~/Downloads/Anaconda3-XXXXXXXXX-Linux-x86_64.sh
+
+conda create -n carAI python=3.6.8
+
+```
+
 # 安装GPU驱动
 
 ```bash
