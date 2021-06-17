@@ -52,3 +52,13 @@ nvidia-smi
 conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch
 
 ```
+
+# cudatoolkit_10.1版本兼容pytorch的较新版本，也兼容tensorflow-gpu_1.14.0，同时可替换原有的tenosrflow-gpu_1.8.0
+
+# python 依赖包
+
+```bash
+
+待更新...
+
+```
