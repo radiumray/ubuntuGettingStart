@@ -72,6 +72,7 @@ cached-property      1.5.2
 certifi              2021.5.30
 dataclasses          0.8
 docopt               0.6.2
+easydict             1.9
 gast                 0.4.0
 google-pasta         0.2.0
 grpcio               1.38.0
