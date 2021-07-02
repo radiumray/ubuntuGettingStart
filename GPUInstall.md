@@ -76,7 +76,7 @@ easydict             1.9
 gast                 0.4.0
 google-pasta         0.2.0
 grpcio               1.38.0
-h5py                 3.1.0
+h5py                 2.10.0
 html5lib             0.9999999
 importlib-metadata   4.5.0
 Keras-Applications   1.0.8
