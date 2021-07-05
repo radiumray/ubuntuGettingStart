@@ -110,3 +110,16 @@ wrapt                1.12.1
 zipp                 3.4.1
 
 ```
+
+## 车如果要运行此训练机生成的模型需要做已下版本改动：
+```bash
+
+pip3 uninstall tensorflow==1.8.0
+pip3 uninstall protobuf
+pip3 uninstall h5py
+
+pip3 install tensorflow==1.14.0
+pip3 install protobuf
+pip3 install h5py==2.10
+
+```
