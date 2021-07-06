@@ -144,4 +144,17 @@ scp -r /home/local_dir root@xxx.xxx.xxx.xxx:/home
 scp -r root@192.168.0.101:/home/dir /home
 
 
+# 训练指令
+
+# 进入虚拟环境
+conda activate carAI
+
+# 进入训练文件夹目录
+cd /home/uniwise/uniwise_train
+# 训练模型111.h5
+python manage.py --tub=./data --model=./output/111.h5
+# 基于111.h5 迁移学习 训练模型 222.h5
+python manage.py --tub=./data --model=./output/222.h5 --base_model=./output/111.h5
+
+
 ```
