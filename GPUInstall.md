@@ -146,6 +146,9 @@ scp -r root@192.168.0.101:/home/dir /home
 
 # 训练指令
 
+# ssh登录训练服务器, 用户名：uniwise,密码：123456
+ssh uniwise@172.32.9.120
+
 # 进入虚拟环境
 conda activate carAI
 
