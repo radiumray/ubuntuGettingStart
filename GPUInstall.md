@@ -50,6 +50,13 @@ nvidia-smi
 ```bash
 conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch
 
+# 如果pytorch-1.8.1安装过程慢
+
+# 下载地址
+https://download.pytorch.org/whl/torch_stable.html
+# 安装
+pip install torch-1.8.1+cu101-cp36-cp36m-linux_x86_64.whl
+
 ```
 
 # cudatoolkit_10.1版本兼容pytorch的较新版本，也兼容tensorflow-gpu_1.14.0，同时可替换原有的tenosrflow-gpu_1.8.0
