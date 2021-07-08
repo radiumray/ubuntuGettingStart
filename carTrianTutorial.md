@@ -1,21 +1,20 @@
 # 命令行远程训练步骤：
 ```bash
 
+# 车采集完的数据最好压缩成zip文件
+
 # 1、从本地传送文件到服务器
-# 将 /home 目录中的 a.jsp 文件从本地传送到服务器 /home 目录下
-scp /home/a.jsp root@xxx.xxx.xxx.xxx:/home
+# 将 /home 目录中的 data.zip 文件从本地传送到服务器 /home 目录下
+scp /home/data.zip root@xxx.xxx.xxx.xxx:/home
 
-# 2、从服务器下载文件到本地
-# 将服务器的 /home 目录中的a.jsp文件下载到本地的/home目录
-scp root@xxx.xxx.xxx.xxx:/home/a.jsp /home
 
-# 3、从本地传送目录到服务器
-# 将本地的 /home 中的 local_dir 目录传送到服务器的 /home 目录
-scp -r /home/local_dir root@xxx.xxx.xxx.xxx:/home
+# 2、解压data.zip
 
-# 4、从服务器下载目录到本地
-# 将服务器的 /home 目录中的 dir 目录下载到本地的 /home 目录
-scp -r root@192.168.0.101:/home/dir /home
+
+# 3、从服务器下载文件到本地
+# 将服务器的 /home 目录中的111.h5文件下载到本地的/home目录
+scp root@xxx.xxx.xxx.xxx:/home/111.h5 /home
+
 
 
 # 训练指令
