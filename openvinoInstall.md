@@ -67,3 +67,12 @@ cd /opt/intel/openvino/deployment_tools/demo
 
 
 ```
+
+# 常用问题：
+
+```bash
+Found existing installation: PyYAML 3.12
+ERROR: Cannot uninstall 'PyYAML'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+
+sudo -H pip3 install PyYAML --ignore-installed
+```
