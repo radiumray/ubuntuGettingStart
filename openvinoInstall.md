@@ -76,3 +76,17 @@ ERROR: Cannot uninstall 'PyYAML'. It is a distutils installed project and thus w
 
 sudo -H pip3 install PyYAML --ignore-installed
 ```
+
+# 模型转换
+
+```bash
+
+Conv_559
+Conv_560
+Conv_561
+
+python /opt/intel/openvino_2021/deployment_tools/model_optimizer/mo.py --input_model weights/yolov5s.onnx --model_name yolov5sIR -s 255 --reverse_input_channels --output Conv_561,Conv_560,Conv_559
+
+python yoloV5IRTest.py -m yolov5sIR.xml -i test.jpg -at yolov5
+
+```
