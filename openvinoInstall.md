@@ -81,6 +81,8 @@ sudo -H pip3 install PyYAML --ignore-installed
 
 ```bash
 
+python exportYolo.py --weights yolov5-v3/yolov5s.pt --img 640 --batch 1
+
 Conv_559
 Conv_560
 Conv_561
