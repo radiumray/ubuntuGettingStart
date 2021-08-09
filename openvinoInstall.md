@@ -91,4 +91,7 @@ python /opt/intel/openvino_2021/deployment_tools/model_optimizer/mo.py --input_m
 
 python yoloV5IRTest.py -m yolov5sIR.xml -i test.jpg -at yolov5
 
+测试movidus设备：
+/opt/intel/openvino_2021/deployment_tools/demo/demo_squeezenet_download_convert_run.sh -d MYRIAD
+
 ```
