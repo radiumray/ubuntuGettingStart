@@ -149,8 +149,7 @@ def diy(action, controlThrottle):
         backupCar(-1.0, -0.14, 2)
     elif action in ['left', 'right']:
         doingCar(1.0, 0.12, 3)
-    # elif action == '50':
-    #     sss = controlThrottle
-    #     print('sss:::::', sss)
+    elif action == '50':
+        speedCar(0.5, controlThrottle, 2)
 
 ```
