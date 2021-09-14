@@ -220,3 +220,14 @@ def diy(action, controlThrottle):
         
 
 ```
+
+### 调试方法
+```bash
+# 当用图形化控制车时候，遇到没有反应的情况，最直接高效的方法就是在车本地用命令行执行，看看会报什么错误
+cd compitCar
+python compitCar.py --model=./output/xxxxx.h5 --control --web
+# 找到错误能够第一时间定位问题
+
+
+```
+
