@@ -208,5 +208,13 @@ def diy(action, controlThrottle):
         doingCar(1.0, 0.12, 3)
     elif action == '50':
         speedCar(0.5, controlThrottle, 2)
+    elif action == '80':
+        speedCar(0.8, controlThrottle, 2)
+    elif action == 'person_slow':
+        speedCar(0.4, controlThrottle, 2)
+    elif action == 'person':
+        speedCar(0.0, controlThrottle, 2)
+        
+        
 
 ```
