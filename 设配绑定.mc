@@ -1,5 +1,6 @@
 # 设备绑定
 
+
 ```bash
 
 ls /dev/tty*
