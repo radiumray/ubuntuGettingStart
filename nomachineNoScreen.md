@@ -33,3 +33,6 @@ sudo systemctl enable myboot.service
 sudo systemctl start myboot.service
 
 
+
+# 卸载
+sudo dpkg -r nomachine
