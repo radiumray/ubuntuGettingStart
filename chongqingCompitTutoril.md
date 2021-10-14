@@ -8,9 +8,9 @@
 ## 3：训练：点击 [LR训练] 按钮，选择数据文件夹LR_tookit/data，给你的模型命名，点击 [开始训练] 按钮后开始训练，此时保证NUC有独立电源供电，尽量不用电池供电，训练完后会在LR_tookit/output文件夹里生成你的xxx.h5模型。本次比赛只用到工具中的这两个功能生成模型，其它功能不在本次比赛中使用。
 ![train0](https://github.com/radiumray/ubuntuGettingStart/blob/master/images/trian0.png)
 
-![train1](https://github.com/radiumray/ubuntuGettingStart/blob/master/images/trian1.png)
+![train1](https://github.com/radiumray/ubuntuGettingStart/blob/master/images/train1.png)
 
-![train2](https://github.com/radiumray/ubuntuGettingStart/blob/master/images/trian2.png)
+![train2](https://github.com/radiumray/ubuntuGettingStart/blob/master/images/train2.png)
 
 
 ## 4：转移模型到比赛：把LR_toolkit/output生成的xxx.h5模型放到compitCar/output中去
