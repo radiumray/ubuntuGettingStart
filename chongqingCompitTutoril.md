@@ -16,3 +16,9 @@
 ## 4：转移模型到比赛：把LR_toolkit/output生成的xxx.h5模型放到compitCar/output中去
 
 ## 5：使用 mixly软件，拖拽图形块，定义遇到标识牌后的行为，上传mixly.py文件到小车(名称不得修改)，远程启动看效果，调整图形块中的参数，直到效果满意为止。
+
+![mixly0](https://github.com/radiumray/ubuntuGettingStart/blob/master/images/mixly0.png)
+
+![mixly1](https://github.com/radiumray/ubuntuGettingStart/blob/master/images/mixly1.png)
+
+![mixly2](https://github.com/radiumray/ubuntuGettingStart/blob/master/images/mixly2.png)
