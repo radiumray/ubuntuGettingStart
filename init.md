@@ -60,4 +60,5 @@ conda config --add channels r
 https://mirror.tuna.tsinghua.edu.cn/help/anaconda/
 
 
+pip install torch==1.8.0 torchvision==0.9.0 -i http://mirrors.aliyun.com/pypi/simple/
 
