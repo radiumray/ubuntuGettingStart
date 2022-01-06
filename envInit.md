@@ -35,8 +35,23 @@ sudo dpkg -i nomachine_7.6.2_4_amd64.deb
 # arduino 与相关库安装
 
 # cutecom 安装
-
+sudo apt-get install cutecom
 
 # systemback 安装
+
+1.要在Ubuntu 18.04或Ubuntu 18.10系统上安装systemback，首先删除PPA：
+sudo add-apt-repository --remove ppa:nemh/systemback
+
+2.然后导入此PPA的GPG签名密钥，以便包管理器可以验证签名，签名密钥可以在launchpad.net上找到：
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 382003C2C8B7B4AB813E915B14E4942973C62A1B
+
+在Ubuntu16.04的Systemback binary包可以兼容Ubuntu18.04，因此，可以将Ubuntu16.04的PPA添加到系统。
+sudo add-apt-repository "deb http://ppa.launchpad.net/nemh/systemback/ubuntu xenial main"
+
+3.然后更新源并安装：
+sudo apt update
+sudo apt install systemback
+
+
 
 ```
