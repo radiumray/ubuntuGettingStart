@@ -34,5 +34,9 @@ sudo dpkg -i nomachine_7.6.2_4_amd64.deb
 
 # arduino 与相关库安装
 
+# cutecom 安装
+
+
+# systemback 安装
 
 ```
