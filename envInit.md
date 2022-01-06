@@ -30,6 +30,9 @@ https://github.com/radiumray/ubuntuGettingStart/blob/master/supervisor.md
 # nomachine 安装
 sudo dpkg -i nomachine_7.6.2_4_amd64.deb
 
+# vscode 安装
+
+# arduino 安装
 
 
 ```
