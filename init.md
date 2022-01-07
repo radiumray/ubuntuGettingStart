@@ -54,7 +54,7 @@ apt-get update
 
 conda config --add channels r
 
-即在/home/user目录下出现condarc文件
+即在/home/user目录下出现.condarc文件
 
 
 https://mirror.tuna.tsinghua.edu.cn/help/anaconda/
