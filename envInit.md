@@ -5,6 +5,24 @@
 # 安装anaconda，配置conda的源
 https://github.com/radiumray/ubuntuGettingStart/blob/master/init.md
 
+# conda 找不到指令
+ubuntu18.4 安装anaconda时conda：未找到命令(有坑)
+
+第一步：sudo 时赋予当前账户root权限（可以修改系统文件），gedit是一个编辑器，可以换成别的编辑器，如gvim
+
+sudo gedit ~/.bashrc
+
+第二步：添加到最后即可
+
+export PATH="/home/zm/anaconda3/bin:$PATH"
+
+第三步：更新.bashrc文件
+
+source ~/.bashrc
+
+
+
+
 # pip list
 https://github.com/radiumray/uniwiseRosCar/blob/main/pipList.md
 
