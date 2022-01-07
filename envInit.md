@@ -2,9 +2,16 @@
 
 ```bash
 
+# 安装anaconda，配置conda的源
+https://github.com/radiumray/ubuntuGettingStart/blob/master/init.md
+
 # pip list
 https://github.com/radiumray/uniwiseRosCar/blob/main/pipList.md
 
+
+
+# git生成密钥
+https://github.com/radiumray/ubuntuGettingStart/blob/master/git.md
 
 
 pip install tensorflow==1.14.0
