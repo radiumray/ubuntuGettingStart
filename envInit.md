@@ -2,6 +2,10 @@
 
 ```bash
 
+# 更换ros源
+sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.ustc.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/ros-latest.list'
+
+
 # 安装anaconda，配置conda的源
 https://github.com/radiumray/ubuntuGettingStart/blob/master/init.md
 
